@@ -21,6 +21,10 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: fixed;
+	padding: 1% 4% 1% 4%;
+	background-color: rgba(0, 0, 0, 0.722);
+	width: 100%;
 }
 
 .logo{
@@ -113,6 +117,7 @@ h4 {
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
+	width: 100%;
 }
 .skills .skills_content {
 	display: flex;
@@ -134,6 +139,55 @@ h4 {
 	width: calc(50% - 60px);
 }
 
+.skills .skills_content .right .bars {
+	margin-bottom: 20px;
+}
+.skills .skills_content .right .info {
+	display: flex;
+	justify-content: space-between;
+}
+.skills .skills_content .right .skill_name {
+	color: white;
+	font-weight: 900;
+	font-size: large;
+}
+.skills .skills_content .right .percentage {
+	color: lightcoral;
+	font-weight: 900;
+	font-size: large;
+}
+.skills .skills_content .right .line {
+	height: 7px;
+	width: 100%;
+	background: lightgray;
+	position: relative;
+}
+.skills .skills_content .right .line::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: crimson;
+}
+.skills .skills_content .right .arduino::before {
+	width: 90%;
+}
+.skills .skills_content .right .html::before {
+	width: 80%;
+}
+.skills .skills_content .right .js::before {
+	width: 30%;
+}
+.skills .skills_content .right .php::before {
+	width: 10%;
+}
+.skills .skills_content .right .css::before {
+	width: 80%;
+}
+.skills .skills_content .right .c_plus::before {
+	width: 60%;
+}
 .about{
 	width: 100%;
 	padding: 100px 0px;
@@ -168,7 +222,7 @@ h4 {
 	margin-bottom: 25px;
 }
 .about-text p{
-	color: #3FD7FC;
+	color: lightcoral;
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 18px;
@@ -191,7 +245,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 400px; /앱솔루트 밸류/
+	min-height: 400px;
 }
 .card{
 	height: 365px;
@@ -201,7 +255,7 @@ h4 {
 	border-radius: 20px;
 	margin: 15px;
 	position: relative;
-	overflow: hidden; /만약 컨텐츠가 패딩 박스를 넘어가면 그 넘어간 부분들을 순겨서 표시/
+	overflow: hidden; 
 	text-align: center;
 }
 .card i{
@@ -209,7 +263,7 @@ h4 {
 	display: block;
 	text-align: center;
 	margin: 25px 0px;
-	color: #0064C8;
+	color: crimson;
 
 }
 h5{
@@ -218,13 +272,13 @@ h5{
 	margin-bottom: 15px;
 }
 .pra p{
-	color: #3FD7FC;
+	color: lightcoral;
 	font-size: 16px;
 	line-height: 27px;
 	margin-bottom: 25px;
 }
 .card .button{
-	background-color:#0064C8;
+	background-color:crimson;
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -235,6 +289,98 @@ h5{
 }
 .card .button:hover{
 	background-color: transparent;
-	border: 2px solid #0064C8;
+	border: 2px solid crimson;
 	cursor: pointer;
+}
+.contact {
+	display: flex;
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+	min-height: 600px;
+}
+.c_title h2{
+	color: white;
+	font-size: 60px;
+	width: 1000px;
+	margin: 30px auto;
+	text-align: center;
+	margin-top: 80px;
+}
+.c_box {
+
+}
+.c_text {
+	color: white;
+	font-size: 20px;
+	margin:30px auto;
+	text-align: left;
+}
+.block {
+	margin-left: 300px;
+}
+#name, #email {
+	font-size:20px;
+	height: 40px;
+	border-radius: 10px;
+	padding: 10px;
+	width: 400px;
+}
+p {
+	color: white;
+}
+#message {
+	font-size: 20px;
+	height: 100px;
+	border-radius: 10px;
+	width: 400px;
+	padding-bottom:40px;
+}
+footer {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-color: #191919;
+	display: flex;
+	flex-direction:column;
+	justify-content: center; 
+	align-items: center;
+}
+.first_p {
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+.second_p {
+	font-size: 17px;
+	width: 500px;
+	text-align:center;
+}
+.social a {
+	display: flex;
+	width: 45px;
+	height: 45px;
+	color: crimson;
+	font-size: 45px;
+	align-content: center;
+	margin: 22px 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	color: white;
+	border-radius: 50px;
+	text-decoration: none;
+}
+.social {
+	display:flex;
+}
+.social a::hover {
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end {
+	position: absolute;
+	color: crimson;
+	font-size: 16px;
+
 }
